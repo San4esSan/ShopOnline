@@ -1,0 +1,152 @@
+.banner {
+  margin-bottom: 60px;
+}
+
+.banner__bg {
+  background-image: url(../image/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 480px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.banner__title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 130%;
+  color: var(--color-light);
+  padding-top: 145px;
+  padding-left: 114px;
+  margin-bottom: 100px;
+}
+
+.banner__timer {
+  text-align: center;
+}
+
+.banner__list {
+  display: flex;
+  justify-content: center;
+}
+
+.banner__item:not(:last-child) {
+  margin-right: 30px
+}
+
+.timer__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--color-light);
+}
+
+.timer__number {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 130%;
+  margin-right: 5px;
+  color: var(--color-light);
+}
+
+.timer__text {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  color: var(--color-light);
+}
+
+@media (max-width: 1200px) {
+  .banner__bg {
+    height: 314px;
+  }
+
+  .banner__title {
+    padding-top: 80px;
+    padding-left: 80px;
+    margin-bottom: 63px;
+    font-size: 40px;
+  }
+
+  .banner__item:not(:last-child) {
+    margin-right: 20px
+  }
+
+  .timer__number {
+    font-size: 40px;
+  }
+
+  .timer__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    margin-bottom: 40px;
+  }
+
+  .banner__bg {
+    background-image: url(../image/banner-tablet.jpg);
+    height: 280px;
+  }
+
+  .banner__title {
+    padding-top: 64px;
+    margin-bottom: 82px;
+    font-size: 30px;
+  }
+
+  .banner__item:not(:last-child) {
+    margin-right: 10px
+  }
+
+  .timer__subtitle {
+    font-size: 12px;
+  }
+
+  .timer__number {
+    font-size: 30px;
+    margin-right: 3px;
+  }
+
+  .timer__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner__bg {
+    background-image: url(../image/banner-mobile.jpg);
+    height: 340px;
+  }
+
+  .banner__title {
+    padding-top: 50px;
+    padding-left: 0;
+    margin-bottom: 189px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .banner__item:not(:last-child) {
+    margin-right: 8px
+  }
+
+  .timer__subtitle {
+    font-size: 8px;
+  }
+
+  .timer__number {
+    font-size: 20px;
+    margin-right: 2px;
+  }
+
+  .timer__text {
+    font-size: 12px;
+  }
+}
